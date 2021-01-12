@@ -1,0 +1,487 @@
+@media (max-width: 1300px){
+  .documents{
+    &__inner{
+      justify-content: center;
+      grid-template-columns: repeat(3, 255px);
+    }
+  }
+  .programm{
+    &__inner{
+      
+    }
+    &__item{
+      display: flex !important;
+      justify-content: center;
+    }
+  }
+  .example{
+    .slick-prev {
+      left: -40px;
+    }
+    &__item{
+      display: flex !important;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1170px){
+  .certificate-form{
+    &__btn,
+    &__input-mail,
+    &__input-adress{
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+    &__form-label{
+      margin: 0 5px;
+    }
+  }
+}
+
+@media (max-width: 1150px){
+  .news{
+    &__inner{
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    &__item-present{
+      order: 2;
+    }
+  }
+  .footer{
+    &__items{
+      flex-wrap: wrap;
+    }
+    &__list{
+      display: none;
+    }
+    &__list-social{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1100px){
+  .example{
+    .slick-prev {
+      left: -10px;
+    }
+    .slick-next {
+      right: -10px;
+    }
+  }
+  .news{
+    &__item{
+      margin-bottom: 15px;
+    }
+  }
+  .contacts-page{
+    &__code-title,
+    &__code-text{
+      padding-right: 10px;
+    }
+  }
+  .news-page{
+    &__inner{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1050px){
+  .header{
+    background-size: cover;
+    background-position: center right;
+    &__social{
+      display: none;
+    }
+    &__burger{
+      display: block;
+    }
+  }
+  .menu{
+    padding: 20px 0;
+    transform: translateY(-200%);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    transition: all .3s;
+    background-color: #fff;
+    &.menu--active{
+      transform: translateY(0%);
+      transition: all .3s;
+    }
+    .header__social{
+      display: flex;
+    }
+    &__list{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__list-item{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+  .info{
+    &__inner{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item{
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .contacts-page{
+    background-position: top center;
+    &__inner{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__content{
+      margin-bottom: 20px;
+      text-align: center;
+      .contacts-page__contact-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .header__contact-phone{
+        display: inline-block;
+      }
+    }
+    &__social{
+      justify-content: center;
+    }
+    &__code{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__code-content{
+      padding-top: 10px;
+    }
+    &__form-title{
+      font-size: 23px;
+    }
+  }
+}
+
+
+@media (max-width: 850px){
+  .header{
+    &__contact{
+      display: none;
+    }
+    &__title{
+      font-size: 33px;
+      line-height: 41px;
+    }
+  }
+  .menu{
+    .header__social{
+      margin-bottom: 20px;
+    }
+    .header__contact{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .header__contact-box{
+        margin-bottom: 20px;
+      }
+      .header__contact-btn{
+        margin: 0 auto;
+      }
+    }
+  }
+  .documents{
+    &__inner{
+      grid-template-columns: repeat(2, 255px);
+    }
+  }
+  .example{
+    &__item{
+      margin-bottom: 30px;
+    }
+    .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+      padding-right: 9px;
+    }
+    button{
+      font-size: 0;
+      width: 11px;
+      height: 11px;
+      background-color: #E4E4E4;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .slick-active{
+      button{
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        border: 2px solid #84AAED;
+      }
+    }
+  }
+  .certificate{
+    &__top-title{
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &__top-price{
+      padding-left: 20px;
+      padding-right: 40px;
+    }
+  }
+  .news-page{
+    &__inner{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      justify-items: center;
+    }
+  }
+}
+
+@media (max-width: 770px){
+  .certificate-form{
+    &__title{
+      text-align: center;
+    }
+    &__form-inputs{
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 760px){
+  .footer{
+    &__items{
+      flex-direction: column;
+    }
+  }
+  
+}
+
+@media (max-width: 700px){
+  .header{
+    &__title{
+      font-size: 23px;
+      line-height: 30px;
+    }
+    &__subtitle{
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 25px;
+    }
+  }
+  .title{
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .certificate{
+    &__top{
+      justify-content: center;
+    }
+    &__top-content{
+      display: none;
+    }
+  }
+  .certificate{
+    &__top-num{
+      color: #333;
+    }
+    &__top-text{
+      font-weight: 700;
+    }
+    &__top-day{
+      font-weight: 700;
+    }
+  }
+}
+
+
+@media (max-width: 570px){
+  .header{
+    &__title{
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+    &__subtitle{
+      font-size: 17px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .documents{
+    &__inner{
+      grid-template-columns: repeat(1, 255px);
+    }
+  }
+  .info{
+    margin-bottom: 30px;
+    &__inner{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .programm{
+    margin-bottom: 40px;
+  }
+  .example{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .news{
+    margin-bottom: 30px;
+    &__item-present{
+      background-color: #eeeeee;
+      background-image: none;
+      max-width: 555px;
+      width: 100%;
+      box-shadow: 0px 2px 15px rgba(0,0,0,0.0677994);
+      padding-bottom: 45px;
+    }
+    &__item-present-content{
+      text-align: center;
+    }
+    &__item-present-title{
+      max-width: 100%;
+    }
+    &__item-present-text{
+      max-width: 100%;
+    }
+  }
+  .certificate{
+    &__content{
+      p{
+        font-size: 16px;
+        line-height: 20px;
+      }
+      h4{
+        font-size: 20px;
+      }
+      h5{
+        font-size: 18px;
+      }
+    }
+    &__content-list {
+      margin-left: 30px;
+    }
+    &__content-item{
+      font-size: 16px;
+      line-height: 20px;
+      &::before{
+        top: 5px;
+      }
+    }
+  }
+  .certificate-form{
+    &__input-adress{
+      max-width: 550px;
+      width: 100%;
+    }
+  }
+  .news-page{
+    &__inner{
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+  }
+  .news__item{
+    &:nth-child(8),
+    &:nth-child(7),
+    &:nth-child(6){
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .header{
+    padding-bottom: 20px;
+    &__body{
+      text-align: center;
+    }
+    &__body-img{
+      display: none;
+    }
+    &__link{
+      margin: 0 auto;
+    }
+    &__top-text{
+      display: none;
+    }
+  }
+  .title{
+    font-size: 23px;
+    line-height: 27px;
+  }
+  .news{
+    &__item-present-title{
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__item-present-text{
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  .certificate{
+    &__content-list {
+      margin-left: 10px;
+    }
+  }
+  .certificate-form{
+    &__title{
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &__input-phone{
+      margin-bottom: 15px;
+    }
+    &__form-input{
+      max-width: 360px;
+      width: 100%;
+    }
+  }
+  .contacts-page{
+    &__form-input,
+    &__form-textarea{
+      max-width: 300px;
+      width: 100%;
+    }
+    &__form{
+      padding: 25px 15px 35px 15px;
+    }
+  }
+}
+
+
+@media (max-width: 360px){
+  .breadcrumbs{
+    display: none;
+  }
+  .header-page{
+    margin-bottom: 20px;
+  }
+}
